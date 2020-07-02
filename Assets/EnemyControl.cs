@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class EnemyControl : MonoBehaviour
 {
-    public int speed;
+    enum Race {Blob, Negablob, Snake, Sorcerer}
+    Race race;
 
-    private void Start()
+    int x;
+    int y;
+
+    void Start()
     {
-        speed = 1;
+        //
     }
 }
