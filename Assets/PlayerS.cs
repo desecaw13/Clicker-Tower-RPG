@@ -18,11 +18,12 @@ public class PlayerS : MonoBehaviour
 
     void Start()
     {
-        
+        //;
     }
 
     void Update()
     {
-        
+        //;
     }
+
 }

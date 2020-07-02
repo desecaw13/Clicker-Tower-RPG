@@ -8,7 +8,7 @@ public class MenuControl : MonoBehaviour
     public Slider HPBar;
     public PlayerS player;
     
-    void Update()//dont use update, call from player
+    void Update()//dont use update, call from PlayerS
     {
         HPBar.value = (float) player.currHP/player.maxHP;
     }
@@ -16,17 +16,20 @@ public class MenuControl : MonoBehaviour
     public void ItemButton ()
     {
         SceneManager.LoadScene("Item");
-        Debug.Log("Item scene load");
     }
 
     public void ShopButton()
     {
         SceneManager.LoadScene("Shop");
-        Debug.Log("Shop scene load");
     }
 
     public void ExitButton()
     {
         Debug.Log("Quitted");
+    }
+
+    public void BackButton()
+    {
+        SceneManager.LoadScene("Main");
     }
 }
