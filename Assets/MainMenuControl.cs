@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class MenuControl : MonoBehaviour
+public class MainMenuControl : MonoBehaviour
 {
     public PlayerS player;
 
@@ -83,10 +83,5 @@ public class MenuControl : MonoBehaviour
     public void ExitButton()
     {
         Debug.Log("Quitted");
-    }
-
-    public void BackButton()
-    {
-        SceneManager.LoadScene("Main");
     }
 }

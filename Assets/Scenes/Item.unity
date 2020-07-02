@@ -204,6 +204,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &642594604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 642594606}
+  - component: {fileID: 642594605}
+  m_Layer: 0
+  m_Name: player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &642594605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642594604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f6c3f6a5bd72241912227dad12a59f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Level: 1
+  Gold: 0
+  Exp: 0
+  currHP: 10
+  maxHP: 10
+  Str: 1
+  Def: 1
+  Speed: 1
+  Luck: 1
+--- !u!4 &642594606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642594604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867784133
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +349,7 @@ RectTransform:
   - {fileID: 1247451679}
   - {fileID: 1481341115}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -442,7 +494,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1481341114
 GameObject:
@@ -485,11 +537,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1481341114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e786157be3d94f418544aef0ad18733, type: 3}
+  m_Script: {fileID: 11500000, guid: 478130edba07c474a8fb453762e07239, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HPBar: {fileID: 0}
-  player: {fileID: 0}
+  player: {fileID: 642594605}
 --- !u!1 &1947024108
 GameObject:
   m_ObjectHideFlags: 0
