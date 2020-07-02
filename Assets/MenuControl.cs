@@ -1,17 +1,32 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuControl : MonoBehaviour
 {
-    public void ButtonEX ()
+    public Slider HPBar;
+    public PlayerS player;
+    
+    void Update()//dont use update, call from player
     {
-        //changing a scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log("Exmaple text");
+        HPBar.value = (float) player.currHP/player.maxHP;
+    }
+    
+    public void ItemButton ()
+    {
+        SceneManager.LoadScene("Item");
+        Debug.Log("Item scene load");
     }
 
-    public void actionButton()
-    { }
+    public void ShopButton()
+    {
+        SceneManager.LoadScene("Shop");
+        Debug.Log("Shop scene load");
+    }
+
+    public void ExitButton()
+    {
+        Debug.Log("Quitted");
+    }
 }
